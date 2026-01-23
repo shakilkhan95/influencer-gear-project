@@ -17,40 +17,40 @@
 <body class="font-inter">
     <!-- header section markup  starts here-->
     <header id="header" class="bg-white">
-        <nav id="navbar" class="px-4 py-8 flex justify-between  md:px-30">
-            <div id="menuBar" class="text-gray-900 w-6 h-6 cursor-pointer lg:hidden"><i class="fa-solid fa-bars"></i></div>
+        <nav id="navbar" class="relative px-4 py-8 flex justify-between  md:px-30">
+            <div id="menu-bar" class="text-gray-900 w-6 h-6 cursor-pointer lg:hidden"><i class="fa-solid fa-bars"></i></div>
 
             <h4 class="font-extrabold text-gray-700 cursor-pointer md:text-2xl">Influencer Products</h4>
 
             <div class="flex gap-8">
-                <ul class="hidden lg:inline-flex gap-8 text-gray-700 font-semibold">
-                <li class="navitem"><a class="navlink" href="#home">Home</a></li>
-                <li class="navitem"><a class="navlink" href="#products">Products</a></li>
-                <li class="navitem"><a class="navlink" href="#signup">Sign up</a></li>
-                <li class="navitem"><a class="navlink" href="#login">Log in</a></li>
-            </ul>
+                <ul id="navigation" class="hidden absolute left-0 top-20 px-5 w-full bg-white text-gray-700 font-semibold md:px-30 lg:bg-transparent lg:inline-flex lg:static lg:gap-8">
+                    <li class="mb-5 lg:mb-0"><a href="#home">Home</a></li>
+                    <li class="mb-5 lg:mb-0"><a href="#products">Products</a></li>
+                    <li class="mb-5 lg:mb-0"><a href="#signup">Sign up</a></li>
+                    <li class="mb-5 lg:mb-0"><a href="#login">Log in</a></li>
+                </ul>
 
-            <div class="flex gap-8">
-                <div class="hidden md:inline-block">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <div class="flex gap-8">
+                    <div class="hidden md:inline-block cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
 
-                <div class="text-gray-900">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="text-gray-900 cursor-pointer">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
 
-        <section id="banner" class="flex flex-col gap-8 p-12 md:px-20">
+        <section id="banner" class="flex flex-col gap-8 p-12 md:px-30 lg:flex-row-reverse">
             <div class="bg-[url('/images/Circle-design.svg')] bg-contain bg-no-repeat self-center">
                 <img class="p-14" src="./images/main-camera.png" alt="Featured Camera image">
             </div>
 
-            <div class="text-center">
-                <h1 class="text-3xl text-gray-700 font-bold">Start your Journey as Influencer</h1>
+            <div class="text-center lg:self-center lg:text-start">
+                <h1 class="text-3xl text-gray-700 font-bold lg:text-5xl lg:pr-40 lg:leading-16">Start your Journey as Influencer</h1>
 
-                <p class="m-4 font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti, placeat aliquid facilis voluptate vero?</p>
+                <p class="my-4 font-semibold text-sm text-gray-700 lg:pr-96 lg:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti, placeat aliquid facilis voluptate vero?</p>
 
                 <button type="button" class="bg-pink-600 rounded-4xl px-6 py-2.5 text-white cursor-pointer">Prebook Now <i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -319,5 +319,8 @@
         </div>
      </footer>
     <!-- Footer section markup ends here  -->
+
+    <!-- javaScript link  -->
+     <script src="script.js"></script>
 </body>
 </html>

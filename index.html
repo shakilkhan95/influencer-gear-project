@@ -14,42 +14,43 @@
      <!-- external stylesheet link  -->
       <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="font-inter">
     <!-- header section markup  starts here-->
-    <header id="header">
-        <nav id="navbar" class="container">
-            <h4 class="logo-header">Influencer Products</h4>
+    <header id="header" class="bg-white">
+        <nav id="navbar" class="px-4 py-8 flex justify-between">
+            <div id="menuBar" class="text-gray-900 w-6 h-6 cursor-pointer"><i class="fa-solid fa-bars"></i></div>
 
-            <div class="navigation-container">
-                <ul class="navigation">
-                    <li class="navitem"><a class="navlink" href="#home">Home</a></li>
-                    <li class="navitem"><a class="navlink" href="#products">Products</a></li>
-                    <li class="navitem"><a class="navlink" href="#signup">Sign up</a></li>
-                    <li class="navitem"><a class="navlink" href="#login">Log in</a></li>
-                </ul>
+            <h4 class="font-extrabold text-gray-700 cursor-pointer">Influencer Products</h4>
 
-                <div class="navigation-icon">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i></div>
+            <ul class="hidden">
+                <li class="navitem"><a class="navlink" href="#home">Home</a></li>
+                <li class="navitem"><a class="navlink" href="#products">Products</a></li>
+                <li class="navitem"><a class="navlink" href="#signup">Sign up</a></li>
+                <li class="navitem"><a class="navlink" href="#login">Log in</a></li>
+            </ul>
 
-                    <div class="cart-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+            <div class="navigation-icon">
+                <div class="hidden">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="text-gray-900">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
         </nav>
 
-        <section id="banner" class="container">
-            <div class="banner-content">
-                <h1 class="banner-title">Start your Journey as Influencer</h1>
-
-                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti, placeat aliquid facilis voluptate vero?</p>
-
-                <button type="button" class="btn-primary">Prebook Now <i class="fa-solid fa-arrow-right"></i></button>
+        <section id="banner" class="flex flex-col gap-8 p-12">
+            <div class="bg-[url('/images/Circle-design.svg')] bg-contain bg-no-repeat">
+                <img class="p-14" src="./images/main-camera.png" alt="Featured Camera image">
             </div>
 
-            <div class="banner-img">
-                <img src="./images/main-camera.png" alt="Featured Camera image">
+            <div class="text-center">
+                <h1 class="text-3xl text-gray-700 font-bold">Start your Journey as Influencer</h1>
+
+                <p class="m-4 font-semibold text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti, placeat aliquid facilis voluptate vero?</p>
+
+                <button type="button" class="bg-pink-600 rounded-4xl px-6 py-2.5 text-white cursor-pointer">Prebook Now <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </section>
     </header>
